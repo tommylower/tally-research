@@ -1,0 +1,189 @@
+# How to Launch a Token: A Complete Guide
+
+Launching a token is one of the most consequential decisions a project can make. Done right, a token sale raises capital, builds community, and aligns incentives in a single event. Done poorly, it creates regulatory risk, mercenary capital, and long-term headaches.
+
+This guide walks through the key steps — from legal planning to post-launch operations — based on what's worked for projects raising millions in compliant token sales.
+
+---
+
+## 1. Decide If a Token Makes Sense
+
+Not every project needs a token. Consider launching one only if:
+
+- **Your platform benefits from token-based coordination.** Governance tokens that control protocol parameters, staking tokens that secure networks, or access tokens that gate features all have clear utility. Tokens without function tend to underperform.
+
+- **You can integrate real blockchain utility.** Successful tokens have use cases from day one — governance, staking, or access rights. If a token would be purely speculative with no functional purpose, it's probably not the right path.
+
+- **You're prepared for the operational burden.** Managing a distributed holder base, ongoing compliance obligations, and public treasury scrutiny requires dedicated resources.
+
+If you're unsure, the answer is probably no. Tokens create obligations that last years.
+
+---
+
+## 2. Legal and Compliance Planning
+
+This is the foundation. Skip it and everything else becomes harder.
+
+**Define the token's utility and economic parameters.** What does the token do? How does supply change over time? What rights do holders have?
+
+**Engage legal counsel experienced in securities law and token offerings.** Different jurisdictions have different rules. The US, EU (MiCA), and offshore structures each have tradeoffs.
+
+**Determine which jurisdictions you'll include or exclude.** Most projects block certain regions (US, in some cases) or require specific compliance steps for participation.
+
+**Plan KYC/KYB processes.** Identity verification is now standard for compliant token sales. Decide what level of verification you need and which provider will handle it.
+
+**Consider KYI (Know Your Issuer).** Linking your token contract to verified team identities addresses "unknown deployer risk" that concerns institutional investors.
+
+This phase typically takes months, not weeks. Start early.
+
+→ [Learn more about compliance](https://docs.tally.xyz/token-sales/compliance)
+
+---
+
+## 3. Choose Your Sale Mechanism
+
+The mechanism you choose shapes who participates, how price is discovered, and what happens post-sale.
+
+### Liquidity Bootstrapping Pools (LBPs)
+
+Price starts high and declines over time, discouraging early speculation. The market finds fair value rather than bots front-running a fixed price.
+
+**Best for:** Projects that want broad distribution and market-driven price discovery.
+
+**How it works:** Pool weights shift from heavily favoring your token (e.g., 99/1) to balanced (e.g., 65/35). As weights shift, price drops unless buyers step in.
+
+→ [Learn more about LBPs](https://docs.tally.xyz/token-sales/liquidity-bootstrapping-pools)
+
+### Continuous Clearing Auctions (CCAs)
+
+Fully on-chain auction where bidders place orders that are split across auction blocks. Each block clears at the identified market price.
+
+**Best for:** Projects that want transparent, manipulation-resistant price discovery with built-in liquidity seeding.
+
+**How it works:** Bidders specify a budget and maximum price. The protocol spreads bids across the auction period. Uniform clearing means all successful bidders pay the same price.
+
+→ [Learn more about CCAs](https://docs.tally.xyz/token-sales/continuous-clearing-auction)
+
+### Fixed-Price Sales
+
+Set a predetermined price with optional allocation limits per wallet.
+
+**Best for:** Projects with high conviction on valuation or specific distribution goals.
+
+**Tradeoffs:** Overpriced sales don't sell out (public failure). Underpriced sales require allocation rules that may feel unfair.
+
+→ [Learn more about fixed-price sales](https://docs.tally.xyz/token-sales/fixed-price)
+
+---
+
+## 4. Set Sale Parameters
+
+Once you've chosen a mechanism, configure the details:
+
+- **Timeline:** When does KYC open? When does bidding start? How long does the sale run?
+- **Amount to sell:** What percentage of supply goes to the public sale?
+- **Bid currency:** USDC, USDT, or ETH are most common.
+- **Floor price:** The minimum acceptable clearing price.
+- **Graduation threshold:** Minimum raise amount — if not met, the sale cancels and bids refund.
+- **Allocation limits:** Per-wallet caps to ensure broad distribution.
+- **Geo-blocking:** Which jurisdictions are excluded?
+- **Lockups:** Region-specific vesting or lockup requirements.
+
+→ [See full parameter documentation](https://docs.tally.xyz/token-sales)
+
+---
+
+## 5. Distribution and Custody
+
+**Audit your smart contracts.** This is non-negotiable.
+
+**Plan for both retail and institutional participants.** Retail users self-custody via wallets. Institutional buyers often require custodial delivery through BitGo, Fireblocks, Anchorage, or similar.
+
+**Map all allocations clearly:**
+- Public sale percentage
+- Team tokens (with vesting)
+- Prior investor allocations (with vesting)
+- Community airdrops
+- Treasury reserves
+
+**Test the distribution process before launch.** Simulate different scenarios: what if you hit the cap early? What if you reach only 50%?
+
+---
+
+## 6. Vesting and Lockups
+
+Team and early investor tokens should vest over 1-4 years. This is both good practice and increasingly expected by regulators and sophisticated buyers.
+
+**On-chain vesting contracts provide transparency.** Anyone can verify that tokens are locked.
+
+**Consider lockup options for public buyers.** MegaETH offered bonus allocation for participants accepting a 1-year lock, which also provided a compliance pathway for US accredited investors.
+
+→ [Learn more about lockups](https://docs.tally.xyz/token-sales/lockups)
+
+---
+
+## 7. Execution
+
+**Open KYC verification weeks in advance.** MegaETH had 100,000+ verified participants before the sale started. That doesn't happen overnight.
+
+**Prepare support channels.** Discord, Telegram, dedicated help desk. Despite preparation, users will have KYC issues and questions. Responsiveness builds trust.
+
+**Monitor the sale in real time.** Funds raised, participant count, time remaining. Provide updates. If you've built in flexibility (like raising a cap), use it judiciously and communicate changes clearly.
+
+**After closing, distribute tokens promptly.** Share contract addresses and block explorer links so holders can verify balances.
+
+---
+
+## 8. Post-Launch Operations
+
+The sale is just the beginning.
+
+### Seed Liquidity
+
+If you enable DEX integration, a portion of funds and unsold tokens seed liquidity on Uniswap or Balancer. Your project controls this LP position.
+
+→ [Learn more about post-sale liquidity](https://docs.tally.xyz/token-sales/post-sale-liquidity)
+
+### Activate Governance
+
+If governance is part of your token design, activate it promptly. An early community vote — even on something modest — establishes that the token has real utility beyond trading.
+
+→ [Learn more about governance](https://tally.xyz/governance)
+
+### Pursue Exchange Listings
+
+Projects with large holder bases often receive inbound interest from exchanges. Be prepared with the technical and compliance prerequisites.
+
+### Communicate Transparently
+
+Provide regular, honest updates on development progress and treasury management. The projects that maintain credibility long-term are transparent about both successes and setbacks.
+
+---
+
+## Infrastructure Options
+
+Launching a token requires substantial infrastructure: compliance tooling, distribution mechanics, custody integration, and governance systems.
+
+[Tally](https://tally.xyz) provides the full stack: sale setup, compliance, branded interfaces, post-sale liquidity, governance, and staking — all in one platform.
+
+**Proven at scale:** Tally works with [Arbitrum](https://tally.xyz/gov/arbitrum), [ZKsync](https://tally.xyz/gov/zksync), [Uniswap](https://tally.xyz/gov/uniswap), [Wormhole](https://tally.xyz/gov/wormhole), and other leading protocols.
+
+**What Tally handles:**
+- Sale mechanism configuration (LBP, CCA, fixed-price)
+- KYC/KYB/KYI integration
+- Branded, white-labeled sale pages
+- Smart contract deployment
+- Post-sale liquidity seeding
+- Vesting and lockup management
+- Governance and staking post-launch
+
+→ [Talk to the Tally team](https://tally.xyz/contact)
+
+---
+
+## Related Resources
+
+- [Token Sale Documentation](https://docs.tally.xyz/token-sales)
+- [LBP vs CCA vs Fixed-Price: Choosing a Sale Mechanism](./lbp-vs-cca-vs-fixed-price.md)
+- [Token Sale Compliance Guide](./token-sale-compliance.md)
+- [Governance Documentation](https://docs.tally.xyz/governance)
