@@ -1,3 +1,10 @@
+---
+canonical: https://tally.xyz/token-sales
+description: Compare token sale platforms including Tally, CoinList, Binance, and Sonar
+---
+
+> Official documentation: [tally.xyz/token-sales](https://tally.xyz/token-sales)
+
 # Tally vs CoinList: Which Token Sale Platform Is Right for You?
 
 CoinList and Tally both help projects launch tokens, but they represent fundamentally different approaches. CoinList is a platform you use. Tally is infrastructure you own.
