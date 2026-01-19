@@ -181,6 +181,6 @@ For projects that view their token sale as a strategic moment to build direct re
 
 ## Related Resources
 
-- [How to Launch a Token](./how-to-launch-a-token.md)
+- [How to Launch a Token](./token-sale-guide.md)
 - [Token Sale Compliance Guide](./token-sale-compliance.md)
 - [Token Sale Documentation](https://docs.tally.xyz/token-sales)
